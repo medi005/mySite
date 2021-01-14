@@ -1,0 +1,33 @@
+<!-- Structure de la page
+
+	Histoire de l’utilisateur #1: Ma page de destination de produit devrait avoir un élément avec un correspondant .headerid="header"
+
+Histoire de l'#2: Je peux voir une image dans l’élément avec un correspondant . Un logo d’entreprise ferait une bonne image ici.headerid="header-img"
+
+Histoire de l’utilisateur #3: Dans l’élément, je peux voir un élément avec un correspondant .#headernavid="nav-bar"
+
+Histoire de l’utilisateur #4: Je peux voir au moins trois éléments cliquables à l’intérieur de l’élément, chacun avec la classe .navnav-link
+
+Histoire de l’utilisateur #5: Lorsque je clique sur un bouton dans l’élément, je suis pris à la section correspondante de la page de destination..nav-linknav
+
+Histoire de l’utilisateur #6: Je peux regarder une vidéo de produit intégré avec .id="video"
+
+Histoire de l’utilisateur #7: Ma page de destination a un élément avec un correspondant .formid="form"
+
+Histoire de l’utilisateur #8: Dans le formulaire, il ya un champ avec lequel je peux entrer une adresse e-mail.inputid="email"
+
+Histoire de l’utilisateur #9: Le champ d’entrée doit avoir du texte de placeholder pour faire savoir à l’utilisateur à quoi est le champ.#email
+
+Histoire de l’utilisateur #10: Le champ d’entrée utilise la validation HTML5 pour confirmer que le texte saisi est une adresse e-mail.#email
+
+Histoire de l’utilisateur #11: Dans le formulaire, il ya un soumettre avec un correspondant .inputid="submit"
+
+Histoire de l'#12: Lorsque je clique sur l’élément, l’e-mail est soumis à une page statique (utilisez cette URL simulée: https://www.freecodecamp.com/email-submit).#submit
+
+Histoire de l’utilisateur #13: La barre de navigation doit toujours être en haut du viewport.
+
+Histoire de l’utilisateur #14: Ma page de destination de produit doit avoir au moins une requête multimédia.
+
+Histoire de l’utilisateur #15: Ma page de destination de produit doit utiliser la flexbox CSS au moins une fois.
+
+ -->

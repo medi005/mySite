@@ -1,0 +1,298 @@
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--height-header:100px;
+	--rouge:#e84141;
+}
+
+html, body{
+ font-family: "Arial", 
+ 			  "Helvetica", 
+ 			  "sans-serif";
+ font-size: 15px;
+}
+
+/*--------------------Style du header-------*/
+#header{
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #f2f2f2;
+	height: var(--height-header);
+	z-index: 2;
+	width: 100%;
+	padding: 20px;
+/*-----------------------Flexbox-------*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#header #div-img {
+	position:relative;
+	width: var(--height-header);
+	height: var(--height-header);
+	z-index: 1;
+}
+
+#header #div-img img{
+	position: absolute;
+	height: 100%;
+}
+
+
+/*----------Style du conteneur-----------*/
+
+#conteneur{
+	margin-top: var(--height-header);
+}
+
+#titre-primaire{
+	text-align: center;
+}
+
+/*----------Style du formulaire-----------*/
+#form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+              /*Style du input*/
+#email{
+	width: 350px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #858282;
+	outline: none;
+	padding: 0.8rem;
+	transition: border 0.15s ease-in-out;
+	margin: 0.5rem 0;
+
+}
+
+#email:focus{
+	border: 2px solid var(--rouge);
+}
+
+			/*Style du bouton submit*/
+.form-button{
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: #fff;
+	border: 2px solid #e84141;
+	outline: none;
+	padding: 5px 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-button:hover{
+	cursor: pointer;
+	background-color:#e84141;
+	color: white;
+}
+
+/*----------Style du main-----------*/
+#main{
+	width:90%;
+	margin: auto;
+}
+
+/*-----------Style des blocs--------*/
+.bloc-info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bloc{
+	display: flex;
+	align-items: center;
+	width: 85%;
+	margin: 3rem;
+}
+
+.bloc-logo{
+	padding: 0.8rem;
+}
+
+			/*Style des icônes fontawesome*/
+i.fas{
+	font-size: 5rem;
+	color: var(--rouge);
+}
+
+.bloc-texte{
+	padding: 0.8rem;
+}
+
+/*-----------Style de pub-video-----------*/
+.bloc-video{
+	display: flex;
+	justify-content: center;
+	margin: 3rem;
+}
+
+/*-----------Styles des cards-----------*/
+.bloc-card{
+	width: 85%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+}
+			/*Style des cards*/
+.card{
+	border:3px solid var(--rouge);
+	width: 300px;
+	height: 300px;
+}
+
+.card-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ccccff;
+	height: 25%;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.card-info{
+	padding: 0.5rem;
+}
+
+.card-info-price{
+	text-align: center;
+	padding: 0.5rem;
+	font-family: "Open Sans", serif;
+	font-weight: 800;
+	
+}
+
+.card-info-list{
+	list-style: none;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+.bloc-card-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button.card-button{
+	padding: 0.5rem;
+	color: white;
+	background-color: var(--rouge);	
+	border: 1px solid var(--rouge);
+	text-transform: capitalize;
+	font-weight: bold;
+	transition: transform 0.2s;
+}
+
+button.card-button:hover{
+	transform: scale(1.2) rotate(3deg);
+	cursor: pointer;
+}
+
+/*------------Style du footer-----------*/
+#footer{
+	background-color: black;
+	margin-top: 2rem;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+			/*Style du bloc-footer-logo*/
+
+
+.bloc-footer-logo img{
+	max-width: 150px;
+}
+
+		/*Style du bloc-footer-inscription*/
+
+.bloc-footer-inscription{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.footer-form-title{
+	font-family: "Open Sans", 
+				 "Arial", 
+				 "Helvetica";
+	color: white;			 
+}
+
+#footer-form{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+#footer-form label{
+	color: white;
+	font-style: italic;
+}
+
+#footer-form input#email-inscr{
+	width: 350px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #858282;
+	outline: none;
+	padding: 0.8rem;
+	transition: border 0.15s ease-in-out;
+	margin: 0.5rem 0;
+}
+
+#footer-form input#email-inscr:focus{
+	border: 3px solid var(--rouge);
+}
+
+/*----Stylisation du bloc réseaux sociaux--*/
+.bloc-footer-rs{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+i.fab{
+	font-size: 3rem;
+	color: white;
+	transition: color 0.2s ease-in-out;
+	outline: none;
+	margin: 0.7rem 
+}
+
+i.fab:hover{
+	color: var(--rouge);
+	cursor: pointer;
+}
+
+i.fab:focus{
+	transform: scale(1.2);
+	color: #b30000;
+	/*Mettre une animation rebond si possible*/
+}
