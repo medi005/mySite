@@ -44,7 +44,28 @@ html, body{
 	position: absolute;
 	height: 100%;
 }
+/*Style de la nav-bar*/
+#nav-bar{
+	display:flex;
+}
+#nav-bar a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 0.5rem;
+	background-color: var(--rouge);
+	border-radius: 5px;
+	font-weight: bold;
+	margin: 0 0.5rem;
+	border: 1px solid var(--rouge);
+	transition: 0.3s ease-in-out;  
+}
 
+#nav-bar a:hover{
+	background-color: white;
+	color: var(--rouge);
+	border: 1px solid var(--rouge);
+}
 
 /*----------Style du conteneur-----------*/
 
