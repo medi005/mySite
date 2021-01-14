@@ -121,6 +121,7 @@ html, body{
 
 .bloc-logo{
 	padding: 0.8rem;
+	margin: 0 2.5rem;
 }
 
 			/*Style des icônes fontawesome*/
@@ -131,6 +132,18 @@ i.fas{
 
 .bloc-texte{
 	padding: 0.8rem;
+	margin: 0 2.5rem;
+}
+
+.bloc-texte h2{
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-transform: capitalize;
+}
+
+.bloc-texte p{
+	text-align: justify;
+	font-size: 1rem;
 }
 
 /*-----------Style de pub-video-----------*/
